@@ -5,8 +5,8 @@
 readme파일에는 문제에 대한 설명과 풀면서 느낀점을 적었습니다.   
 soultion파일에는 왜 이런 방식을 택했는지에 대한 설명과 문제 풀이 해설이 있습니다.   
 
-백준 시스템을 추가 했습니다.
-백준 문제 풀이의 경우 자동으로 업데이트 됩니다
+앞으로 모든 풀이는 백준 허브를 이용한 자동 업로드를 하게 됩니다.
+프로그래머스 구 문제풀이는 프로그래머스/구_문제풀이에 저장됩니다.
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=hedwig3798)](https://solved.ac/hedwig3798/)
 - - -
