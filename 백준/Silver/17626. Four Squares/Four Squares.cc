@@ -17,7 +17,7 @@ int main() {
 			continue;
 		}
 
-		for (int j = 1; j*j < i; j++) {
+		for (int j = 1; j*j <= i/2; j++) {
 			dp[i] = min(dp[i], dp[j*j] + dp[i - (j*j)]);
 		}
 	}
