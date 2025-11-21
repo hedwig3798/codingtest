@@ -9,8 +9,8 @@ int main()
 
 	std::cin >> N;
 
-	std::vector<long long> length(N - 1);
-	std::vector<long long> cost(N);
+	std::vector<unsigned long long> length(N - 1);
+	std::vector<unsigned long long> cost(N);
 
 	for (int i = 0; i < N - 1; ++i)
 	{
@@ -22,8 +22,8 @@ int main()
 		std::cin >> cost[i];
 	}
 
-	long long minCost = INT_MAX;
-	int ans = 0;
+	unsigned long long minCost = cost[0];
+	unsigned long long ans = 0;
 	for (int i = 0; i < N - 1; ++i)
 	{
 		minCost = std::min(minCost, cost[i]);
