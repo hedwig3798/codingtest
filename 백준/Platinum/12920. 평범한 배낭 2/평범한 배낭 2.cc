@@ -25,15 +25,37 @@ int main()
 		things t;
 
 		std::cin >> t.V >> t.C >> t.K;
-		for (int j = t.K; j > 0; j >>= 1)
+		// for (int j = t.K; j > 0; j >>= 1)
+		// {
+		// 	int count = j - (j >> 1);
+		// 
+		// 	things trunk;
+		// 	trunk.V = t.V * count;
+		// 	trunk.C = t.C * count;
+		// 	trunk.K = count;
+		// 
+		// 	T.push_back(trunk);
+		// }
+
+		int ind = 0;
+		while (t.K > (1 << ind))
 		{
-			int count = j - (j >> 1);
+			int count = (1 << ind);
+			t.K -= count;
 
 			things trunk;
 			trunk.V = t.V * count;
 			trunk.C = t.C * count;
 			trunk.K = count;
-
+			T.push_back(trunk);
+			++ind;
+		}
+		if (t.K > 0)
+		{
+			things trunk;
+			trunk.V = t.V * t.K;
+			trunk.C = t.C * t.K;
+			trunk.K = t.K;
 			T.push_back(trunk);
 		}
 	}
